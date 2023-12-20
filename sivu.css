@@ -14,6 +14,7 @@ body {
   #LNvalikko{
   }
   #pelitvalikko{
+    visibility: hidden;
   }
   #yhteystiedotvalikko{
   }
