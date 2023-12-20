@@ -4,6 +4,7 @@ body {
   header{
     width: 70%;
     position: relative;
+    height: 50px;
   }
   #valikko{
     
@@ -36,18 +37,52 @@ body {
     background-color:rgb(9, 202, 246) ; 
     border-radius: 5px;
   }
-  main {
-  }
-  #ansioluettelo{
-    text-align: center;
+
+
+
+
+
+  #tiedot{
+    display: flex;
+    background-color: greenyellow;
   }
   #ansio-otsikko{
     font-family: fantasy;
   }
-  #kuva{
-    width: 120px;
+  #ansioluettelo{
+    position: relative;
+    top: 10px;
+    width: 33%;
+    text-align: center;
+  }
+  #LN{
+    position: relative;
+    top: 10px;
+    width: 33%;
+    text-align: center;
+  }
+  
+  #ansiokuva{
+    width: 300px;
     height: auto;
     border-radius: 150px;
+    position: relative;
+    left: 5px;
+    transition: filter 0.3s ease;
+  }
+  #ansiokuva:hover{
+    filter: brightness(70%);
+  }
+ 
+  #LNkuva{
+    width: 300px;
+    height: auto;
+    border-radius: 40px;
+    position: relative;
+    left: 5px;
+  }
+  #LN-otsikko{
+    font-family: fantasy;
   }
   footer {
     background-color: lightskyblue;
