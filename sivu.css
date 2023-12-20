@@ -19,25 +19,7 @@ body {
   }
   #yhteystiedotvalikko{
   }
-  nav {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  nav a {
-    color: rgb(0, 0, 0); 
-    text-decoration: none;
-    font-family: fantasy;
-    padding: 10px;
-    display: block;
-  }
-
-  nav a:hover {
-    color: rgb(1, 103, 158);
-    background-color:rgb(9, 202, 246) ; 
-    border-radius: 5px;
-  }
-
+  
 
 
 
