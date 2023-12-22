@@ -1,35 +1,49 @@
 body {
-
+  margin: 0;
+  padding: 0;
+  background-image: url("sivutiedostot/pexels-aleksandar-pasaric-2603464.jpg");
+  background-size: cover; /* Aseta taustakuva kattamaan koko näyttö */
+  background-position: center; /* Aseta kuva keskelle näyttöä */
+  background-repeat: no-repeat; /* Estä taustakuvan toisto */
   }
   header{
     width: 70%;
     position: relative;
     height: 50px;
   }
-  #valikko{
-    
+  
+  #mina{
+    display: flex;
+    font-family: georgia;
+    color: white;
   }
-
-  #ansiovalikko{
-  }
-  #LNvalikko{
-  }
-  #pelitvalikko{
-    visibility: hidden;
-  }
-  #yhteystiedotvalikko{
+  #pääteksti{
+    background-color: rgba(5, 0, 0, 0.7);
+    position: relative;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    padding: 0.5cm;
+    text-align: center;
   }
   
-
-
+  #esittelyteksti{
+    font-size: xx-large;
+  }
 
 
   #tiedot{
+    background-color: rgba(5, 0, 0, 0.7);
     display: flex;
-    background-color: greenyellow;
+    position: relative;
+    width: 80%;
+    font-family: georgia;
+    left: 10%;
+    right: 10%;
+    color: white;
   }
+  
   #ansio-otsikko{
-    font-family: fantasy;
   }
   #ansioluettelo{
     position: relative;
@@ -46,7 +60,6 @@ body {
   
   #ansiokuva{
     width: 300px;
-    height: auto;
     border-radius: 150px;
     position: relative;
     left: 5px;
@@ -62,17 +75,49 @@ body {
     border-radius: 40px;
     position: relative;
     left: 5px;
+    transition: filter 0.3s ease;
   }
-  #LN-otsikko{
-    font-family: fantasy;
+  #LNkuva:hover{
+    filter: brightness(70%);
+  }
+  #pelit{
+    position: relative;
+    top: 10px;
+    width: 33%;
+    text-align: center;
+  }
+  #pelitkuva{
+    width: 300px;
+    height: auto;
+    border-radius: 150px;
+    position: relative;
+    left: 5px;
+    transition: filter 0.3s ease;
+  }
+  #pelitkuva:hover{
+    filter: brightness(70%);
   }
   footer {
-    background-color: lightskyblue;
+    display: flex;
+    font-family: georgia;
     color: white;
-    text-align: center;
-    padding: 1em;
-    position: fixed;
     bottom: 0;
     width: 100%;
+    height: 2cm;
   }
-  
+  #fposti{
+    position: relative;
+    left: 3%;
+    text-align: left;
+    width: 33%;
+  }
+  #osoite{
+    text-align: center;
+    width: 33%;
+  }
+  #puhnro{
+    position: relative;
+    right: 3%;
+    text-align: right;
+    width: 33%;
+  }
