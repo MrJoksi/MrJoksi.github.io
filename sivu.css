@@ -5,7 +5,10 @@ body {
   background-size: cover; /* Aseta taustakuva kattamaan koko näyttö */
   background-position: center; /* Aseta kuva keskelle näyttöä */
   background-repeat: no-repeat; /* Estä taustakuvan toisto */
+  min-height: 100%;
+  font-family: 'Times New Roman';
   }
+
   header{
     width: 70%;
     position: relative;
@@ -14,9 +17,10 @@ body {
   
   #mina{
     display: flex;
-    font-family: georgia;
+    
     color: white;
   }
+
   #pääteksti{
     background-color: rgba(5, 0, 0, 0.7);
     position: relative;
@@ -37,7 +41,6 @@ body {
     display: flex;
     position: relative;
     width: 80%;
-    font-family: georgia;
     left: 10%;
     right: 10%;
     color: white;
@@ -46,13 +49,7 @@ body {
   #ansioluettelo{
     position: relative;
     top: 10px;
-    width: 33%;
-    text-align: center;
-  }
-  #LN{
-    position: relative;
-    top: 10px;
-    width: 33%;
+    width: 50%;
     text-align: center;
   }
   
@@ -78,13 +75,14 @@ body {
   #LNkuva:hover{
     filter: brightness(70%);
   }
-  #pelit{
+  #gitti{
     position: relative;
     top: 10px;
-    width: 33%;
+    width: 50%;
     text-align: center;
   }
-  #pelitkuva{
+
+  #gittikuva{
     width: 300px;
     height: auto;
     border-radius: 150px;
@@ -92,30 +90,67 @@ body {
     left: 5px;
     transition: filter 0.3s ease;
   }
-  #pelitkuva:hover{
+
+  #gittikuva:hover{
     filter: brightness(70%);
   }
+
+  #tiedot2{
+    background-color: rgba(5, 0, 0, 0.7);
+    display: flex;
+    position: relative;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    color: white;
+  }
+  #LN{
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+
+  #filler{
+    height: 4cm;
+    position: relative;
+    background-color: rgba(5, 0, 0, 0.7);
+    width: 80%;
+    left: 10%;
+    right: 10%;
+  }
+
   footer {
+    background-color: rgba(5, 0, 0, 0.7);
     display: flex;
     font-family: georgia;
+    position: relative;
     color: white;
-    bottom: 0;
-    width: 100%;
+    bottom: 0%;
+    width: 80%;
+    left: 10%;
+    right: 10%;
     height: 2cm;
   }
+
   #fposti{
     position: relative;
     left: 3%;
     text-align: left;
     width: 33%;
   }
+
   #osoite{
     text-align: center;
     width: 33%;
   }
+
   #puhnro{
     position: relative;
     right: 3%;
     text-align: right;
     width: 33%;
+  }
+
+  #test{
+    height: 100px;
   }
