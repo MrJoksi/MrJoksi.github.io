@@ -17,7 +17,6 @@ body {
   
   #mina{
     display: flex;
-    
     color: white;
   }
 
@@ -27,8 +26,8 @@ body {
     width: 80%;
     left: 10%;
     right: 10%;
-    padding: 0.5cm;
     text-align: center;
+    
   }
   
   #esittelyteksti{
