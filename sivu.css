@@ -1,155 +1,35 @@
-body {
-  margin: 0;
-  padding: 0;
-  background-image: url("sivutiedostot/pexels-aleksandar-pasaric-2603464.jpg");
-  background-size: cover; /* Aseta taustakuva kattamaan koko näyttö */
-  background-position: center; /* Aseta kuva keskelle näyttöä */
-  background-repeat: no-repeat; /* Estä taustakuvan toisto */
-  min-height: 100%;
-  font-family: 'Times New Roman';
-  }
 
-  
-  header{
-    width: 70%;
-    position: relative;
-    height: 50px;
-  }
-  
-  #mina{
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
     display: flex;
-    color: white;
-  }
-
-  #pääteksti{
-    background-color: rgba(5, 0, 0, 0.7);
-    position: relative;
-    width: 80%;
-    left: 10%;
-    right: 10%;
-    text-align: center;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+    color: white; 
   }
   
-  #esittelyteksti{
+  
+  @keyframes blink-animation {
+    to{
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation{
+    to{
+      visibility: hidden;
+    }
+  }
+  #enterArea{
+    
+    position: absolute;
+    text-align: center;
     font-size: xx-large;
-  }
-
-
-  #tiedot{
-    background-color: rgba(5, 0, 0, 0.7);
-    display: flex;
-    position: relative;
-    width: 80%;
-    left: 10%;
-    right: 10%;
-    color: white;
-  }
-  
-  #ansioluettelo{
-    position: relative;
-    top: 10px;
-    width: 50%;
-    text-align: center;
-  }
-  
-  #ansiokuva{
-    width: 300px;
-    border-radius: 150px;
-    position: relative;
-    left: 5px;
-    transition: filter 0.3s ease;
-  }
-  #ansiokuva:hover{
-    filter: brightness(70%);
-  }
- 
-  #LNkuva{
-    width: 300px;
-    height: auto;
-    border-radius: 40px;
-    position: relative;
-    left: 5px;
-    transition: filter 0.3s ease;
-  }
-  #LNkuva:hover{
-    filter: brightness(70%);
-  }
-  #gitti{
-    position: relative;
-    top: 10px;
-    width: 50%;
-    text-align: center;
-  }
-
-  #gittikuva{
-    width: 300px;
-    height: auto;
-    border-radius: 150px;
-    position: relative;
-    left: 5px;
-    transition: filter 0.3s ease;
-  }
-
-  #gittikuva:hover{
-    filter: brightness(70%);
-  }
-
-  #tiedot2{
-    background-color: rgba(5, 0, 0, 0.7);
-    display: flex;
-    position: relative;
-    width: 80%;
-    left: 10%;
-    right: 10%;
-    color: white;
-  }
-  #LN{
-    position: relative;
-    width: 100%;
-    text-align: center;
-  }
-
-  #filler{
-    height: 4cm;
-    position: relative;
-    background-color: rgba(5, 0, 0, 0.7);
-    width: 80%;
-    left: 10%;
-    right: 10%;
-  }
-
-  footer {
-    background-color: rgba(5, 0, 0, 0.7);
-    display: flex;
-    font-family: georgia;
-    position: relative;
-    color: white;
-    bottom: 0%;
-    width: 80%;
-    left: 10%;
-    right: 10%;
-    height: 2cm;
-  }
-
-  #fposti{
-    position: relative;
-    left: 3%;
-    text-align: left;
-    width: 33%;
-  }
-
-  #osoite{
-    text-align: center;
-    width: 33%;
-  }
-
-  #puhnro{
-    position: relative;
-    right: 3%;
-    text-align: right;
-    width: 33%;
-  }
-
-  #test{
-    height: 100px;
+    top: 45%;
+    animation: blink-animation 1.5s steps(5, Start) infinite;
+    -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
   }
