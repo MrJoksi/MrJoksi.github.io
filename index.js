@@ -1,5 +1,6 @@
 
 let enterContent;
+let pageCanged = false;
 document.addEventListener("DOMContentLoaded", function()
 {
   enterContent = document.getElementById("enterArea");
@@ -7,10 +8,12 @@ document.addEventListener("DOMContentLoaded", function()
 })
 
 document.addEventListener("keypress", function(event){
+  if (pageCanged != true) {
   if(event.key == "Enter")
   {
     pageChange();
-    
+    pageCanged = true;
+  }
   }
   });
 
