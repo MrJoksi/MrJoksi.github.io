@@ -48,7 +48,7 @@ function slideImage() {
     GITkuva.setAttribute("id", "GITkuva");
 
     var CVlink = document.createElement("a");
-    CVlink.setAttribute("href", "https://sway.office.com/dG3vmnZXucFC57KF?ref=Link");
+    CVlink.setAttribute("href", "https://sway.cloud.microsoft/8SUkPEgTms1jfPiM?ref=Link");
 
     var CVkuva = document.createElement("img");
     CVkuva.setAttribute("src", "sivutiedostot/ansioluettelokuva.png");
