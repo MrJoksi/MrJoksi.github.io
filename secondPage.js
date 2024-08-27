@@ -1,14 +1,8 @@
-
-
-var testiteksti;
-var teksti = "Tervetuloa tutustumaan verkkosivuuni! Olen tietotekniikan insinööriopiskelija Vaasan ammattikorkeakoulussa, ja tämä sivu toimii ikään kuin virtuaalisena näyteikkunana osaamiseeni."
+var teksti = "Let the Game begin!"
 var body = document.getElementById("body")
 
 function createBackground() {
-    document.body.style.backgroundImage = "url('sivutiedostot/testi2.png')";
-    document.body.style.backgroundSize = "cover";
-    document.body.style.backgroundPosition = "center";
-    document.body.style.backgroundAttachment = "fixed";
+    document.body.style.backgroundColor = "black"   
 }
 
 function createText() {
@@ -22,16 +16,19 @@ function createText() {
 
 
     content.style.width = "80%";
-    content.style.margin = "0 auto"
-    content.style.left = "10%";
-    content.style.top = "0"
-    content.style.height = "30%";1
-    content.style.position = "realtive";
-    content.style.right = "10%";
+    content.style.margin = "0 auto";
+    content.style.position = "absolute";  // Korjattu: 'relative' -> 'absolute'
+    content.style.left = "50%";
+    content.style.top = "0";
+    content.style.transform = "translateX(-50%)";  // Keskittää elementin vaakasuunnassa
+    content.style.height = "10%";
     content.style.textAlign = "center";
     content.style.display = "flex";
+    content.style.justifyContent = "center";  // Varmistaa, että teksti on keskitetty
+    content.style.alignItems = "center";  // Varmistaa, että teksti on keskitetty pystysuunnassa
     content.style.fontSize = "large";
     showLetters(teksti);
+	
 
 
 } 
@@ -70,12 +67,14 @@ function slideImage() {
     container.appendChild(LNlink);
     document.body.appendChild(container);
 
-    container.style.position = "absolute";
-    container.style.height = "50%";
-    container.style.top = "15%";
-    container.style.width = "80%";
-    container.style.left = "10%";
-    container.style.right = "10%";
+	container.style.position = "absolute";
+	container.style.height = "50%";
+	container.style.top = "15%";
+	container.style.width = "80%";
+	container.style.left = "10%";
+	container.style.right = "10%";
+	container.style.border = "10px solid white";
+	container.style.borderRadius = "20px"
 
     var kuvaKaikki = [GITkuva, CVkuva, LNkuva];
 
