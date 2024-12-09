@@ -8,13 +8,9 @@ function createBackground() {
 function createText() {
     var content = document.createElement("div");
     content.setAttribute("id","content");
-
     testiteksti = document.createElement("p");
     content.appendChild(testiteksti);
-    
     document.body.appendChild(content);
-
-
     content.style.width = "80%";
     content.style.margin = "0 auto";
     content.style.position = "absolute";  // Korjattu: 'relative' -> 'absolute'
@@ -28,9 +24,6 @@ function createText() {
     content.style.alignItems = "center";  // Varmistaa, että teksti on keskitetty pystysuunnassa
     content.style.fontSize = "large";
     showLetters(teksti);
-	
-
-
 } 
 
 function slideImage() {

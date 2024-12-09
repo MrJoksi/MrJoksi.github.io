@@ -22,12 +22,9 @@ document.addEventListener("keypress", function(event){
     enterContent.style.animation = "none";
     enterContent.innerHTML = "<p>Loading...</p>";
     setTimeout(function() {
-  
       enterContent.remove();
       createBackground();
-
       createText();
-      
     }, 3000);
   }
   
